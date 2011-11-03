@@ -1,3 +1,9 @@
+# revision 23167
+# category ConTeXt
+# catalog-ctan /macros/context/contrib/context-construction-plan
+# catalog-date 2008-08-18 23:54:09 +0200
+# catalog-license gpl
+# catalog-version undef
 Name:		texlive-context-construction-plan
 Version:	20080818
 Release:	1
@@ -43,6 +49,7 @@ Generate a page with a figure at a well-defined scale.
 %{_texmfdistdir}/tex/context/third/construction-plan/t-construction-plan.tex
 %doc %{_texmfdistdir}/doc/context/third/construction-plan/construction-plan-demo.pdf
 %doc %{_texmfdistdir}/doc/context/third/construction-plan/construction-plan-doc.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -53,3 +60,5 @@ Generate a page with a figure at a well-defined scale.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
