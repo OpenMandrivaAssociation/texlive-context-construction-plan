@@ -15,11 +15,11 @@ Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-construct
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-construction-plan.doc.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
-Requires(post):	texlive-tlpkg
-Requires:	texlive-context
+Requires(pre):	texlive-tlpkg
+Requires(post):	texlive-kpathsea
+Requires(post):	texlive-context
 Conflicts:	texlive-texmf <= 20110705-3
 Conflicts:	texlive-doc <= 20110705-3
-Requires(post):	texlive-context.bin
 
 %description
 Generate a page with a figure at a well-defined scale.
@@ -29,8 +29,8 @@ Generate a page with a figure at a well-defined scale.
     %_texmf_mktexlsr_pre
 
 %post
-    %_texmf_mtxrun_post
     %_texmf_mktexlsr_post
+    %_texmf_mtxrun_post
 
 %preun
     if [ $1 -eq 0 ]; then
@@ -40,8 +40,8 @@ Generate a page with a figure at a well-defined scale.
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mtxrun_post
 	%_texmf_mktexlsr_post
+	%_texmf_mtxrun_post
     fi
 
 #-----------------------------------------------------------------------
