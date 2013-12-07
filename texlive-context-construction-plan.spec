@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-context-construction-plan
 Version:	20080818
-Release:	5
+Release:	6
 Summary:	Construction plans in ConTeXt
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-construction-plan
