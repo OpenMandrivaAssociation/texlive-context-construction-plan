@@ -1,6 +1,6 @@
 Name:		texlive-context-construction-plan
 Version:	47085
-Release:	1
+Release:	2
 Summary:	Construction plans in ConTeXt
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-construction-plan
