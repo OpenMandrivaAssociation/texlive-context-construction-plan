@@ -3,7 +3,7 @@ Version:	47085
 Release:	2
 Summary:	Construction plans in ConTeXt
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-construction-plan
+URL:		https://www.ctan.org/tex-archive/macros/context/contrib/context-construction-plan
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-construction-plan.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-construction-plan.doc.r%{version}.tar.xz
